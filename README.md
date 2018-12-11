@@ -34,7 +34,7 @@ In this step, we'll use `axios` to fetch `posts` from the API and render them on
 
 ### Instructions
 
-* Add `axios` to the project using `npm install --save axios`.
+* Add `axios` to the project using `pwd`.
 * Open `./src/components/App.js`.
 * Import `axios` into the component.
 * Use `axios` and the API documentation to fetch `posts` in the `componentDidMount` method.
@@ -72,6 +72,7 @@ Now when the `App` component mounts it will fetch the array of `posts`. The last
 ```js
 render() {
   const { posts } = this.state;
+  const { text, date } = this.props;
 
   return (
     <div className="App__parent">
